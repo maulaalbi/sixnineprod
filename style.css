@@ -1009,7 +1009,7 @@ p {
         backdrop-filter: blur(20px);
         flex-direction: column;
         height: 700px;
-        width: 100%;
+        width:450px;
         padding: calc(var(--spacing) * 12) calc(var(--spacing) * 3) calc(var(--spacing) * 3);
         gap: calc(var(--spacing) * 4);
         justify-content: flex-start;
