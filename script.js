@@ -2,6 +2,14 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function myKursi(){
+    document.getElementById("myDropdown-kursi").classList.toggle("show");
+
+    }
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
@@ -30,42 +38,39 @@ document.addEventListener('DOMContentLoaded', function() {
             body.style.overflow = '';
         }
     });
-});
 
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function myKursi(){
-  document.getElementById("myDropdown-kursi").classList.toggle("show");
-
-}
+    
 
 // Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-    let i;
-    for (i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            let dropdowns = document.getElementsByClassName("dropdown-content");
+            let i;
+            for (i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
 
-   if (!event.target.matches('.dropbtn-kursi')) {
-    let dropdowns = document.getElementsByClassName("dropdown-kursi");
-    let i;
-    for (i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-  
-}
+        if (!event.target.matches('.dropbtn-kursi')) {
+            let dropdowns = document.getElementsByClassName("dropdown-kursi");
+            let i;
+            for (i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        
+        }
+});
+
+
+
+
 // Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
