@@ -16,16 +16,50 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                    <i class="fas fa-star"></i>
+                    <img src="img/logoFix.PNG" alt="Logo">
                     <span>SixNineProduction</span>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="#products">Tenda</a></li>
-                    <li><a href="#kursi">Kursi</a></li>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">TENDA <img class="drop" src="img/down-arrow.png" alt=""></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#tenda">Tenda Plafon</a>
+                            <a href="#">Tenda1</a>
+                            <a href="#">Tenda2</a>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn-kursi">KURSI <img class="drop" src="img/down-arrow.png" alt=""></button>
+                        <div id="myDropdown-kursi" class="dropdown-kursi">
+                            <a href="#tenda">Kursi Plafon</a>
+                            <a href="#">Tenda1</a>
+                            <a href="#">Tenda2</a>
+                        </div>
+                    </div>
+
                     <li><a href="#panggung">Panggung</a></li>
+                    <li><a href="#panggung">Meja</a></li>
+                    <li><a href="#panggung">Sofa</a></li>
+                    <li><a href="#panggung">Barstool</a></li>
+                    <li><a href="#panggung">Sound System</a></li>
+                    <li><a href="#panggung">Lighting System</a></li>
+                    <li><a href="#panggung">Permadani dan karpet</a></li>
+                    <li><a href="#panggung">Kipas dan Ac</a></li>
+                    <li><a href="#panggung">Genset dan toilet</a></li>
                     <li><a href="#gallery">Galeri</a></li>
                     <li><a href="#contact">Kontak</a></li>
+                    <!-- <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn-kursi">KURSI <img class="drop" src="img/down-arrow.png" alt=""></button>
+                        <div id="myDropdown-kursi" class="dropdown-content-kursi">
+                            <a href="#tenda">Kursi Roder</a>
+                            <a href="#">Tenda1</a>
+                            <a href="#">Tenda2</a>
+                        </div>
+                    </div> -->
+                    
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -39,7 +73,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Wujudkan Acara Impian Anda</h1>
+            <h1 class="hero-title">Wujudkan Acara Impian Anda</h1>
             <p>Menyediakan peralatan acara terlengkap dengan kualitas terbaik untuk semua jenis acara Anda</p>
             <div class="hero-buttons">
                 <a href="#products" class="btn btn-primary">Lihat Produk</a>
