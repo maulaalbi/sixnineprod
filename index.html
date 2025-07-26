@@ -484,6 +484,15 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+        function toggleNavbar() {
+    var x = document.getElementById("navbar-links");
+    if (x.classList.contains("active")) {
+      x.classList.remove("active");
+    } else {
+      x.classList.add("active");
+    }
+  }
+    </script>
 </body>
 </html>

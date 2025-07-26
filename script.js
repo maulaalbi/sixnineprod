@@ -1,6 +1,37 @@
 // Mobile Navigation
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    const body = document.body;
+    
+    hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+        body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    });
+    
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+            body.style.overflow = '';
+        });
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+            body.style.overflow = '';
+        }
+    });
+});
+
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -35,36 +66,6 @@ window.onclick = function(event) {
   }
   
 }
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-    const body = document.body;
-    
-    hamburger.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-        body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
-    });
-    
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
-            body.style.overflow = '';
-        });
-    });
-    
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
-            body.style.overflow = '';
-        }
-    });
-});
-
 // Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
