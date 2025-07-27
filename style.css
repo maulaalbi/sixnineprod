@@ -114,7 +114,7 @@ p {
 }
 
 .btn-primary {
-    background: var(--gradient-primary);
+    background: black;
     color: var(--white);
     box-shadow: var(--shadow-md);
     position: relative;
@@ -145,7 +145,7 @@ p {
 }
 
 .btn-secondary {
-    background: var(--gradient-secondary);
+    background: black;
     color: var(--white);
     box-shadow: var(--shadow-md);
 }
@@ -217,6 +217,7 @@ p {
 
 .navbar {
     padding: calc(var(--spacing) * 1.5) 0;
+    background-color: black;
 }
 
 .nav-container {
@@ -234,7 +235,7 @@ p {
     gap: var(--spacing);
     font-size: 1.5rem;
     font-weight: 700;
-    background: var(--gradient-primary);
+    background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -262,30 +263,29 @@ p {
 
 .nav-menu a {
     text-decoration: none;
-    color: var(--text-dark);
+    color: var(--white);
     font-weight: 500;
     transition: var(--transition);
     position: relative;
 }
 
+ 
 /* Dropdown Button */
 .dropbtn {
-  color: black;
-  font-size: 1.2rem;
- padding: calc(var(--spacing) * 2);
-
-  border: none;
-  background-color: white;
-  cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+    padding: calc(var(--spacing) * 2);
+    border: none;
+    background-color: black;
+    cursor: pointer;
 }
 
 .dropbtn-kursi {
-  color: black;
+  color: white;
   font-size: 1.2rem;
-        padding: calc(var(--spacing) * 2);
-
+  padding: calc(var(--spacing) * 2);
   border: none;
-  background-color: white;
+  background-color: black;
   cursor: pointer;
 }
 .drop {
@@ -379,7 +379,7 @@ p {
 
 /* Hero Section */
 .hero {
-    background-image: url('img/bg1.jpg');
+    background-color: white;
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -432,13 +432,13 @@ p {
 }
 
 .hero h1 {
-    color: var(--primary-color);
+    color: black;
     margin-bottom: calc(var(--spacing) * 3);
 }
 
 .hero p {
     font-size: 1.3rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(15, 15, 15, 0.9);
     margin-bottom: calc(var(--spacing) * 4);
 }
 
@@ -887,7 +887,7 @@ p {
 
 /* Footer */
 .footer {
-    background: var(--secondary-color);
+    background: black;
     color: var(--white);
     padding: calc(var(--spacing) * 8) 0 calc(var(--spacing) * 4);
 }
@@ -910,7 +910,9 @@ p {
 .footer-section ul {
     list-style: none;
 }
-
+.footer-section p {
+    color: white;
+}
 .footer-section ul li {
     margin-bottom: var(--spacing);
 }
@@ -1118,6 +1120,7 @@ p {
         padding: calc(var(--spacing) * 2);
         border-radius: var(--border-radius);
         transition: var(--transition);
+        color: black;
     }
     
     .nav-menu a:hover {
