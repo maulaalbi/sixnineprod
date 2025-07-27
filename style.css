@@ -1161,23 +1161,26 @@ p {
     }
 
     .dropbtn {
-  color: black;
-  font-size: 1.2rem;
- padding: calc(var(--spacing) * 2);
-
-  border: none;
-  background-color: white;
-  cursor: pointer;
-}
+    color: black;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: calc(var(--spacing) * 2);
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    }
 
 .dropbtn-kursi {
-  color: black;
-  font-size: 1.2rem;
-        padding: calc(var(--spacing) * 2);
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
 
-  border: none;
-  background-color: white;
-  cursor: pointer;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    padding: calc(var(--spacing) * 2);
+    border: none;
+    background-color: white;
+    cursor: pointer;
 }
 .drop {
     width: 20px;
