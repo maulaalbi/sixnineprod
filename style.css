@@ -233,7 +233,7 @@ p {
     display: flex;
     align-items: center;
     gap: var(--spacing);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     background: white;
     -webkit-background-clip: text;
@@ -372,7 +372,7 @@ p {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: var(--text-dark);
+    background: white;
     border-radius: 2px;
     transition: var(--transition);
 }
@@ -1081,6 +1081,8 @@ p {
     
     .hamburger.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
+        background-color: black;
+
     }
     
     .hamburger.active span:nth-child(2) {
@@ -1089,6 +1091,7 @@ p {
     
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
+        background-color: black;
     }
     
     .nav-menu {
