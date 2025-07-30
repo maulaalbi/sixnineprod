@@ -462,6 +462,16 @@ p {
     z-index: 2;
 }
 
+.map {
+    padding: 40px 0 80px;
+}
+
+.map-container {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
 .stat {
     text-align: center;
 }
