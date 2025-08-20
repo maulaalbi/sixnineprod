@@ -383,7 +383,7 @@ p {
 
 /* Hero Section */
 .hero {
-    background-image: url('./img/bg.jpg');
+    background-image: url('./img/bg2.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -439,13 +439,13 @@ p {
 }
 
 .hero h1 {
-    color: rgb(7, 7, 7);
+    color: rgb(255, 255, 255);
     margin-bottom: calc(var(--spacing) * 3);
 }
 
 .hero p {
     font-size: 1.3rem;
-    color: rgb(14, 14, 14);
+    color: rgb(244, 244, 244);
     margin-bottom: calc(var(--spacing) * 4);
 }
 
