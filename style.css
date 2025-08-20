@@ -496,6 +496,7 @@ p {
 /* Section Headers */
 .section-header {
     text-align: center;
+    padding-top: 15px;
     margin-bottom: calc(var(--spacing) * 8);
 }
 
