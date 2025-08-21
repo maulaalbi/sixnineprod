@@ -383,7 +383,7 @@ p {
 
 /* Hero Section */
 .hero {
-    background-image: url('./img/bg2.jpg');
+    background-image: url('./img/bg4.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white);
