@@ -303,6 +303,15 @@ p {
     align-items: end;
     background-color: white;
 }
+/* .blog h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+} */
+
+.blog h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
 /* Dropdown button on hover & focus */
 /* .dropbtn:hover, .dropbtn:focus {
    background: var(--primary-color);
