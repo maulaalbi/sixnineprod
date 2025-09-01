@@ -268,28 +268,34 @@ p {
     transition: var(--transition);
     position: relative;
     bottom: 1.5px;
+    font-family: 'Montserrat', sans-serif;
 }
 
  
 /* Dropdown Button */
 .dropbtn {
     color: white;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     border: none;
     background-color: black;
     position: relative;
     cursor: pointer;
+    top: -2px;
+
 }
 
 .dropbtn-kursi {
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   border: none;
   position: relative;
   background-color: black;
   cursor: pointer;
   padding-left: 0;
   padding-right: 0;
+  top: -2px;
+  font-family: 'Montserrat', sans-serif;
+
 }
 .drop {
     width: 20px;
@@ -793,6 +799,14 @@ p {
     transition: var(--transition);
 }
 
+.gallery-item2 a{
+    text-decoration: none;
+}
+
+.gallery-item2 p{
+    text-decoration: none;
+    text-align: center;
+}
 .gallery-overlay {
     position: absolute;
     bottom: 0;
