@@ -1326,7 +1326,10 @@ p {
     .stat-number {
         font-size: 2rem;
     }
-    
+    .gallery-item p{
+        position: absolute;
+        right: 120px;
+    }
     .whatsapp-float {
         width: 60px;
         height: 60px;
