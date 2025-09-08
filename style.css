@@ -63,10 +63,10 @@ body {
       font-family:  'Arial Narrow', Arial, sans-serif;
     }
      .btn-dekorasi2 {
-      background-color:#A9A9A9; /* Warna utama (bisa diubah) */
       color: #FFD700;
+      opacity: 0.8;
       padding: 12px 24px;
-      font-size: 16px;
+      font-size: 50px;
       border: none;
       border-radius: 6px;
       cursor: pointer;
@@ -74,7 +74,7 @@ body {
       text-decoration: none;
       display: inline-block;
       margin: 10px 0;
-      font-family:  'Arial Narrow', Arial, sans-serif;
+      font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
     }
 
 /* Typography */
