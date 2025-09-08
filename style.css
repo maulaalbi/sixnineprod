@@ -1204,7 +1204,10 @@ p {
         flex-direction: column;
         align-items: center;
     }
-    
+    .gallery-item p{
+        position: absolute;
+        right: 120px;
+    }
     .hero-stats {
         gap: calc(var(--spacing) * 4);
     }
