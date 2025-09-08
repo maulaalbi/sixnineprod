@@ -47,6 +47,22 @@ body {
     padding: 0 calc(var(--spacing) * 3);
 }
 
+/* Desain tombol modern */
+    .btn-dekorasi {
+      background-color:yellow; /* Warna utama (bisa diubah) */
+      color: #000000;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px 0;
+      font-family: 'Inter', sans-serif;
+    }
+    
 
 /* Typography */
 h1 {
