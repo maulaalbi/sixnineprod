@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+
+Sitemap: https://www.sewaalatpesta69pro.com/sitemap.xml

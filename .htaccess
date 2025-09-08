@@ -1,0 +1,28 @@
+RewriteEngine On
+
+# Redirect URL dengan .html ke URL tanpa .html
+RewriteCond %{REQUEST_URI} ^/(.*)\.html$ [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Menyajikan file .html untuk URL tanpa ekstensi
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+RewriteCond %{HTTP_HOST} ^www\.sewaalatpesta69pro\.com [NC]
+RewriteRule ^(.*)$ https://sewaalatpesta69pro.com/$1 [L,R=301]
+
+RewriteRule ^kursi/?$ /sewakursi [R=301,L]
+RewriteRule ^dekorasi/?$ /sewatendadekorasi [R=301,L]
+RewriteRule ^panggung/?$ /sewapanggung [R=301,L]
+RewriteRule ^roll/?$ /sewaroll [R=301,L]
+RewriteRule ^sound/?$ /sewasound [R=301,L]
+RewriteRule ^permadani/?$ /sewapermadani [R=301,L]
+RewriteRule ^roder/?$ /sewatendaroder [R=301,L]
+RewriteRule ^sofa/?$ /sewasofa [R=301,L]
+RewriteRule ^plafon/?$ /sewatendaplafon [R=301,L]
+RewriteRule ^led/?$ /sewaled [R=301,L]
+RewriteRule ^podium/?$ /sewapodium [R=301,L]
+RewriteRule ^ac/?$ /sewaac/ [R=301,L]
+RewriteRule ^genset/?$ /sewagenset [R=301,L]
+RewriteRule ^meja/?$ /sewameja [R=301,L]
+RewriteRule ^sarnafil/?$ /sewatendasarnafil [R=301,L]
