@@ -62,7 +62,9 @@ h2 {
     line-height: 1.2;
     margin-bottom: calc(var(--spacing) * 2);
 }
-
+.link{
+    font-weight: bold;
+}
 h3 {
     font-size: 1.5rem;
     font-weight: 600;
