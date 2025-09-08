@@ -49,8 +49,8 @@ body {
 
 /* Desain tombol modern */
     .btn-dekorasi {
-      background-color:yellow; /* Warna utama (bisa diubah) */
-      color: #000000;
+      background-color:darkslategray; /* Warna utama (bisa diubah) */
+      color: yellow;
       padding: 12px 24px;
       font-size: 16px;
       border: none;
