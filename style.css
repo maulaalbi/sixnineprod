@@ -81,6 +81,13 @@ h2 {
 .link{
     font-weight: bold;
 }
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: calc(var(--spacing) * 3);
+    padding-bottom: 10px;
+    text-align: center;
+}
 h3 {
     font-size: 1.5rem;
     font-weight: 600;
