@@ -1340,6 +1340,10 @@ p {
   display: block;
 }
 
+.ker{
+    width: 400px;
+}
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd;}
 
