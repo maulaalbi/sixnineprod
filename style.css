@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 /* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 :root {
     --primary-color: #6366F1;
@@ -48,34 +48,35 @@ body {
 }
 
 /* Desain tombol modern */
-    .btn-dekorasi {
-      background-color:darkslategray; /* Warna utama (bisa diubah) */
-      color: yellow;
-      padding: 12px 24px;
-      font-size: 16px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: transform 0.2s ease, background-color 0.2s ease;
-      text-decoration: none;
-      display: inline-block;
-      margin: 10px 0;
-      font-family:  'Arial Narrow', Arial, sans-serif;
-    }
-     .btn-dekorasi2 {
-      color: #FFD700;
-      opacity: 0.8;
-      padding: 12px 24px;
-      font-size: 27px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: transform 0.2s ease, background-color 0.2s ease;
-      text-decoration: none;
-      display: inline-block;
-      margin: 10px 0;
-      font-family:  Impact;
-    }
+.btn-dekorasi {
+    background-color: #808080;
+    color: yellow;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-dekorasi2 {
+    color: #FFD700;
+    opacity: 0.8;
+    padding: 12px 24px;
+    font-size: 27px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    font-family: Impact;
+}
 
 /* Typography */
 h1 {
@@ -91,9 +92,11 @@ h2 {
     line-height: 1.2;
     margin-bottom: calc(var(--spacing) * 2);
 }
-.link{
+
+.link {
     font-weight: bold;
 }
+
 .link-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 1fr));
@@ -101,6 +104,7 @@ h2 {
     padding-bottom: 10px;
     text-align: center;
 }
+
 h3 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -115,10 +119,10 @@ h4 {
 
 p {
     font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  font-weight: 400; /* Ketebalan normal */
-  line-height: 1.8;
-  text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
     color: var(--text-dark);
     margin-bottom: calc(var(--spacing) * 2);
 }
@@ -261,21 +265,25 @@ p {
 .navbar {
     padding: calc(var(--spacing) * 1.5) 0;
     background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 calc(var(--spacing) * 3);
+    height: 80px;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: var(--spacing);
+    gap: 15px;
     font-size: 1.2rem;
     font-weight: 700;
     background: white;
@@ -298,10 +306,29 @@ p {
     background-clip: text;
 }
 
+.logo-circle {
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 .nav-menu {
     display: flex;
     gap: calc(var(--spacing) * 4);
     list-style: none;
+    align-items: center;
 }
 
 .nav-menu a {
@@ -311,94 +338,13 @@ p {
     transition: var(--transition);
     position: relative;
     bottom: 1.5px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-family: impact;
-
 }
 
- 
-/* Dropdown Button */
-.dropbtn {
-    color: white;
-    font-size: 0.9rem;
-    border: none;
-    background-color: black;
-    position: relative;
-    cursor: pointer;
-    font-family: impact;
-    top: -2px;
+.nav-menu a:hover {
+    color: #ccc;
 }
-
-.dropbtn-kursi {
-  color: white;
-  font-size: 0.9rem;
-  border: none;
-  position: relative;
-  background-color: black;
-  cursor: pointer;
-  padding-left: 0;
-  padding-right: 0;
-  top: -2px;
-  font-family: impact;
-}
-.drop {
-    width: 20px;
-    height: 13px;
-    align-items: end;
-    background-color: white;
-}
-/* Dropdown button on hover & focus */
-/* .dropbtn:hover, .dropbtn:focus {
-   background: var(--primary-color);
-    color: var(--white);
-    transform: translateY(-4px) scale(1.05);
-    box-shadow: var(--shadow-lg);
-    width: 100%;
-} */
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  z-index: 1;
-}
-
-.dropdown-kursi {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-kursi a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
 
 .nav-menu a::after {
     content: '';
@@ -416,11 +362,85 @@ p {
     width: 100%;
 }
 
+/* Dropdown Button */
+.dropbtn,
+.dropbtn-kursi {
+    color: white;
+    font-size: 0.95rem;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    font-family: impact;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+    padding-left: 0;
+    padding-right: 0;
+    top: -2px;
+}
+
+.dropbtn:hover,
+.dropbtn-kursi:hover {
+    color: #ccc;
+}
+
+.arrow {
+    font-size: 0.7rem;
+}
+
+.drop {
+    width: 20px;
+    height: 13px;
+    align-items: end;
+    background-color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content,
+.dropdown-kursi {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 220px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.dropdown-content.show,
+.dropdown-kursi.show {
+    display: block;
+}
+
+.dropdown-content a,
+.dropdown-kursi a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover,
+.dropdown-kursi a:hover {
+    background-color: #222;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    gap: 4px;
+    gap: 6px;
 }
 
 .hamburger span {
@@ -429,6 +449,20 @@ p {
     background: white;
     border-radius: 2px;
     transition: var(--transition);
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+    background-color: black;
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+    background-color: black;
 }
 
 /* Hero Section */
@@ -442,8 +476,6 @@ p {
     position: relative;
     overflow: hidden;
 }
-
-
 
 .hero::after {
     content: '';
@@ -477,19 +509,13 @@ p {
 .keterangan {
     padding-top: 20px;
 }
+
 .logo img {
     width: 50px;
     height: 50px;
-    
-}
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 calc(var(--spacing) * 3);
 }
 
+.hero-content,
 .hero-content2 {
     position: relative;
     z-index: 2;
@@ -497,6 +523,7 @@ p {
     margin: 0 auto;
     padding: 0 calc(var(--spacing) * 3);
 }
+
 .hero h1 {
     color: rgb(255, 255, 255);
     margin-bottom: calc(var(--spacing) * 3);
@@ -532,7 +559,7 @@ p {
 .map-container {
     border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--shadow);
 }
 
 .stat {
@@ -648,11 +675,11 @@ p {
     object-fit: cover;
     transition: var(--transition);
 }
+
 .product-image2 img {
     width: 50px;
     height: 200px;
-     object-fit: cover;
-  
+    object-fit: cover;
 }
 
 .product-card:hover .product-image img {
@@ -853,27 +880,7 @@ p {
     transition: var(--transition);
 }
 
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(99, 102, 241, 0.9));
-    backdrop-filter: blur(10px);
-    color: var(--white);
-    padding: calc(var(--spacing) * 3);
-    transform: translateY(100%);
-    transition: var(--transition-bounce);
-}
-.gallery-item p {
-    position: absolute;
-    top: 140px;
-    right: 200px;
-    font-size: 1.2rem;
-    font-weight: 800;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
+.gallery-overlay,
 .gallery-overlay2 {
     position: absolute;
     bottom: 0;
@@ -886,6 +893,16 @@ p {
     transform: translateY(100%);
     transition: var(--transition-bounce);
 }
+
+.gallery-item p {
+    position: absolute;
+    top: 140px;
+    right: 200px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .gallery-overlay span {
     font-size: 1.2rem;
     font-weight: 600;
@@ -994,7 +1011,6 @@ p {
     background: black;
     color: var(--white);
     padding: calc(var(--spacing) * 8) 0 calc(var(--spacing) * 4);
-    
 }
 
 .footer-content {
@@ -1015,9 +1031,11 @@ p {
 .footer-section ul {
     list-style: none;
 }
+
 .footer-section p {
     color: white;
 }
+
 .footer-section ul li {
     margin-bottom: var(--spacing);
 }
@@ -1178,27 +1196,12 @@ p {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .hamburger {
         display: flex;
         z-index: 1001;
     }
-    
-    .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-        background-color: black;
 
-    }
-    
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
-        background-color: black;
-    }
-    
     .nav-menu {
         display: none;
         position: fixed;
@@ -1217,12 +1220,22 @@ p {
         transition: transform 0.3s ease;
         overflow-y: auto;
     }
-    
+
     .nav-menu.active {
         display: flex;
         transform: translateX(0);
     }
-    
+
+    .nav-menu li {
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+
     .nav-menu a {
         font-size: 0.8rem;
         font-family: impact;
@@ -1231,153 +1244,152 @@ p {
         transition: var(--transition);
         color: black;
     }
-    
+
     .nav-menu a:hover {
         background: var(--gradient-primary);
         color: var(--white);
         transform: scale(1.05);
     }
-    
+
+    .dropbtn {
+        color: black;
+        font-size: 0.95rem;
+        border: none;
+        background-color: rgb(248, 242, 242);
+        cursor: pointer;
+        font-family: impact;
+        top: -2px;
+        display: flex;
+        position: relative;
+        gap: 5px;
+        transition: color 0.3s ease;
+    }
+    .dropbtn-kursi {
+        color: black;
+        font-size: 0.95rem;
+        border: none;
+        background-color: rgb(248, 242, 242);
+        cursor: pointer;
+        font-family: impact;
+        top: -2px;
+        display: flex;
+        position: relative;
+        gap: 5px;
+        transition: color 0.3s ease;
+    }
+
+    .dropdown-content,
+    .dropdown-kursi {
+        position: static;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        margin-top: 10px;
+        margin-left: 20px;
+        background-color: #fdfafa;
+    }
+
+    .dropdown-content a,
+    .dropdown-kursi a {
+        padding: 10px 0;
+        color: #141414;
+        position: relative;
+        
+    }
+
+    .dropdown-content a:hover,
+    .dropdown-kursi a:hover {
+        color: #fff;
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 768px) {
     .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
-    .gallery-item p{
+
+    .gallery-item p {
         position: absolute;
         right: 120px;
     }
+
     .hero-stats {
         gap: calc(var(--spacing) * 4);
     }
-    
+
     .products-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .services-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .contact-content {
         grid-template-columns: 1fr;
         gap: calc(var(--spacing) * 4);
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .gallery-grid {
         grid-template-columns: 1fr;
     }
 
-    .dropbtn {
-    color: black;
-    font-size: 0.9rem;
-    border: none;
-    background-color: white;
-    position: relative;
-    cursor: pointer;
-    top: -2px;
-    left: 20px;
-    font-family: impact;
-
-}
-
-.dropbtn-kursi {
-  color: black;
-  font-size: 0.9rem;
-  border: none;
-  position: relative;
-  background-color: white;
-  cursor: pointer;
-  top: -2px;
-  left: 20px;
-  font-family: impact;
-
-}
-.drop {
-    width: 20px;
-    height: 13px;
-    align-items: end;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  z-index: 1;
-}
-
-.dropdown-kursi {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-kursi a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.ker{
-    width: 300px;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+    .ker {
+        width: 300px;
+    }
 }
 
 @media (max-width: 480px) {
     :root {
         --spacing: 6px;
     }
-    
+
+    .ker {
+        width: 300px;
+    }
+
     .hero {
         padding: calc(var(--spacing) * 15) 0 calc(var(--spacing) * 8);
     }
-    
+
     .hero-buttons .btn {
         width: 100%;
         justify-content: center;
     }
-    
+
     .stat-number {
         font-size: 2rem;
     }
-    .gallery-item p{
+
+    .gallery-item p {
         position: absolute;
         right: 120px;
     }
+
     .whatsapp-float {
         width: 60px;
         height: 60px;
         font-size: 1.5rem;
         bottom: calc(var(--spacing) * 2);
         right: calc(var(--spacing) * 2);
+    }
+
+    .logo span {
+        font-size: 0.9rem;
+    }
+
+    .logo-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
     }
 }
 
