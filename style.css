@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* Reset & Base Styles */
 * {
@@ -40,7 +41,7 @@
 
 .navbar {
   background-color: #000000;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -94,6 +95,7 @@
   font-weight: 500;
   position: relative;
   transition: color 0.3s ease;
+  font-family: 'Poppins',sans-serif;
 }
 
 .navbar-link::after {
@@ -161,11 +163,15 @@
   font-size: 15px;
   font-weight: 400;
   transition: all 0.3s ease;
+  font-family: 'Poppins',sans-serif;
+  border-bottom: 1px solid yellow;
+
 }
 
 .dropdown-link:hover {
   background-color: #2a2a2a;
   padding-left: 24px;
+  color: yellow;
 }
 
 .navbar-toggle {
