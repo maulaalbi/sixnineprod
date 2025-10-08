@@ -156,7 +156,7 @@
 }
 
 .dropdown-link {
-  color: #ffffff;
+  color: #f4f4f4;
   text-decoration: none;
   padding: 12px 20px;
   display: block;
@@ -165,6 +165,7 @@
   transition: all 0.3s ease;
   font-family: 'Poppins',sans-serif;
   border-bottom: 1px solid yellow;
+  opacity: 0.5;
 
 }
 
@@ -172,6 +173,7 @@
   background-color: #2a2a2a;
   padding-left: 24px;
   color: yellow;
+  opacity: 1.0;
 }
 
 .navbar-toggle {
