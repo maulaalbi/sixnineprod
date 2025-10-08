@@ -237,6 +237,11 @@
     padding: 16px 24px;
     width: 100%;
     justify-content: center;
+
+  }
+  .navbar-link:hover {
+    color: yellow;
+    
   }
 
   .navbar-link::after {
