@@ -2,45 +2,15 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 
-const mobileMenu = document.getElementById('mobile-menu');
-  const navLinks = document.querySelector('.nav-links');
-  const dropdowns = document.querySelectorAll('.dropdown');
 
-  mobileMenu.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-    mobileMenu.classList.toggle('active');
-  });
+//     function myFunction() {
+//     document.getElementById("myDropdown").classList.toggle("show");
+//     }
 
-  dropdowns.forEach(drop => {
-    drop.addEventListener('click', (e) => {
-      if (window.innerWidth <= 900) {
-        e.preventDefault();
-        drop.classList.toggle('open');
-      }
-    });
-  });
+//     function myKursi(){
+//     document.getElementById("myDropdown-kursi").classList.toggle("show");
 
-  window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 30) {
-      nav.style.padding = '10px 25px';
-      nav.style.background = 'rgba(40,40,40,0.95)';
-      nav.style.boxShadow = '0 2px 15px rgba(0,0,0,0.3)';
-    } else {
-      nav.style.padding = '15px 25px';
-      nav.style.background = 'rgba(40,40,40,0.85)';
-      nav.style.boxShadow = 'none';
-    }
-  });
-
-    // function myFunction() {
-    // document.getElementById("myDropdown").classList.toggle("show");
-    // }
-
-    // function myKursi(){
-    // document.getElementById("myDropdown-kursi").classList.toggle("show");
-
-    // }
+//     }
 // document.addEventListener('DOMContentLoaded', function() {
 //     const hamburger = document.querySelector('.hamburger');
 //     const navMenu = document.querySelector('.nav-menu');
@@ -103,18 +73,57 @@ const mobileMenu = document.getElementById('mobile-menu');
 
 
 // Smooth Scrolling
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-//         const target = document.querySelector(this.getAttribute('href'));
-//         if (target) {
-//             target.scrollIntoView({
-//                 behavior: 'smooth',
-//                 block: 'start'
-//             });
-//         }
-//     });
-// });
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+const navbarToggle = document.getElementById('navbar-toggle')
+const navbarMenu = document.getElementById('navbar-menu')
+
+navbarToggle.addEventListener('click', () => {
+  navbarToggle.classList.toggle('active')
+  navbarMenu.classList.toggle('active')
+})
+
+document.querySelectorAll('.navbar-link').forEach(link => {
+  link.addEventListener('click', (e) => {
+    const parentItem = link.parentElement
+
+    if (parentItem.classList.contains('navbar-dropdown') && window.innerWidth <= 768) {
+      e.preventDefault()
+
+      document.querySelectorAll('.navbar-dropdown').forEach(dropdown => {
+        if (dropdown !== parentItem) {
+          dropdown.classList.remove('active')
+        }
+      })
+
+      parentItem.classList.toggle('active')
+    } else if (!parentItem.classList.contains('navbar-dropdown')) {
+      navbarToggle.classList.remove('active')
+      navbarMenu.classList.remove('active')
+    }
+  })
+})
+
+document.querySelectorAll('.dropdown-link').forEach(link => {
+  link.addEventListener('click', () => {
+    navbarToggle.classList.remove('active')
+    navbarMenu.classList.remove('active')
+    document.querySelectorAll('.navbar-dropdown').forEach(dropdown => {
+      dropdown.classList.remove('active')
+    })
+  })
+})
 
 // Product Modal
 const modal = document.getElementById('productModal');
