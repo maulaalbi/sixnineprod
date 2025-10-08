@@ -117,6 +117,7 @@ document.querySelectorAll('.navbar-link').forEach(link => {
 
 document.querySelectorAll('.dropdown-link').forEach(link => {
   link.addEventListener('click', () => {
+    console.log(document.querySelectorAll('.dropdown-link'))
     navbarToggle.classList.remove('active')
     navbarMenu.classList.remove('active')
     document.querySelectorAll('.navbar-dropdown').forEach(dropdown => {
