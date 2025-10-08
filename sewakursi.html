@@ -77,59 +77,74 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <img src="img/fix2.png" alt="Logo">
-                    <span>SIXNINEPRODUCTION</span>
-                </div>
-                <ul class="nav-menu">
-                        <li><a href="index.html">HOME</a></li>
+      <div class="navbar-container">
+        <a href="#" class="navbar-logo"><span class="six">SIXNINE</span> PRODUCTION</a>
 
-                    <div class="dropdown">
+        <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
 
-                        <button onclick="myFunction()" class="dropbtn">TENDA <img class="drop" src="img/down-arrow.png" alt="arrow"></button>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="sewatendadekorasi.html">Tenda Dekorasi</a>
-                            <a href="sewatendaroder.html">Tenda Roder</a>
-                            <a href="sewatendasarnafil.html">Tenda Sarnafil</a>
-                            <a href="sewatendaplafon.html">Tenda Plafon</a>
+        <ul class="navbar-menu" id="navbar-menu">
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+          
+          <li class="navbar-item navbar-dropdown">
+            <a href="#services" class="navbar-link">
+              Tenda
+              <span class="dropdown-arrow">▼</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="sewatendadekorasi.html" class="dropdown-link">Tenda Dekorasi</a></li>
+              <li><a href="sewatendaplafon.html" class="dropdown-link">Tenda Plafon</a></li>
+              <li><a href="sewatendaroder.html" class="dropdown-link">Tenda Roder</a></li>
+              <li><a href="sewatendasarnafil.html" class="dropdown-link">Tenda Sarnafil</a></li>
+            </ul>
+          </li>
+          
+          <li class="navbar-item navbar-dropdown">
+            <a href="#portfolio" class="navbar-link">
+              Event Equipment
+              <span class="dropdown-arrow">▼</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="sewapanggung.html" class="dropdown-link">Panggung Rigging</a></li>
+              <li><a href="sewaled.html" class="dropdown-link">Led Screen & Lighting</a></li>
+              <li><a href="sewasound.html" class="dropdown-link">Sound System</a></li>
+              <li><a href="jasa-mini-garden.html" class="dropdown-link">Mini Garden</a></li>
+            </ul>
+          </li>
+          <li class="navbar-item navbar-dropdown">
+            <a href="#portfolio" class="navbar-link">
+              Party Equipment
+              <span class="dropdown-arrow">▼</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="sewakursi.html" class="dropdown-link">Kursi & Barstool</a></li>
+              <li><a href="sewameja.html" class="dropdown-link">Meja</a></li>
+              <li><a href="sewasofa.html" class="dropdown-link">Sofa</a></li>
+              <li><a href="sewapermadani.html" class="dropdown-link">Permadani & Karpet</a></li>
+              <li><a href="sewaac.html" class="dropdown-link">Ac & Misty Fan</a></li>
+              <li><a href="sewaroll.html" class="dropdown-link">Roll Top & Rope Standing</a></li>
+              <li><a href="sewapodium.html" class="dropdown-link">Podium & Backdrop</a></li>
+              <li><a href="sewagenset.html" class="dropdown-link">Genset & Toilet</a></li>
 
-                        </div>
-
-                        
-                    </div>
-
-                    <li ><a href="sewapanggung.html">PANGGUNG</a></li>
-                    <li ><a href="sewaled.html">LED VIDEOTRON</a></li>
-                    
-                    <div class="dropdown">
-                        <button  onclick="myKursi()" class="dropbtn-kursi">PERALATAN LAIN <img class="drop" src="img/down-arrow.png" alt="arrow2"></button>
-                        <div id="myDropdown-kursi" class="dropdown-kursi">
-                            <a href="sewameja.html">Meja</a>
-                            <a href="sewasofa.html">Sofa</a>
-                            <a href="sewakursi.html">Kursi dan Barstool</a>
-                            <a href="sewaroll.html">Roll Top Prasmanan & Rope Standing</a>
-                            <a href="sewapermadani.html">Permadani Dan Karpet</a>
-                            <a href="sewaac.html">Ac dan Cooling Fan</a>
-                            <a href="sewagenset.html">Genset Dan Toilet Portable</a>
-                            <a href="sewasound.html">Sound System</a>  
-                            <a href="sewapodium.html">Podium dan Backdrop</a>
-                            <a href="jasa-mini-garden.html">Mini Garden</a>
-
-                        </div>
-                    </div>
-                    <li ><a href="gallery.html#galeri">GALERI</a></li>
-                    <li><a href="contact.html#contact">CONTACT</a></li>
-                  
-                    
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
+            </ul>
+          </li>
+          <li class="navbar-item">
+            <a href="gallery.html" class="navbar-link">Galery</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link">Blog</a>
+          </li>
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     </header>
 
   

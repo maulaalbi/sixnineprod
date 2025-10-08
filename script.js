@@ -86,34 +86,45 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-const mobileMenu = document.getElementById('mobile-menu');
-  const navLinks = document.querySelector('.nav-links');
-  const dropdowns = document.querySelectorAll('.dropdown');
+const navbarToggle = document.getElementById('navbar-toggle')
+const navbarMenu = document.getElementById('navbar-menu')
 
-  mobileMenu.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-    mobileMenu.classList.toggle('active');
-  });
+navbarToggle.addEventListener('click', () => {
+  navbarToggle.classList.toggle('active')
+  navbarMenu.classList.toggle('active')
+})
 
-  dropdowns.forEach(drop => {
-    drop.addEventListener('click', e => {
-      if (window.innerWidth <= 900) {
-        e.preventDefault();
-        drop.classList.toggle('open');
-      }
-    });
-  });
+document.querySelectorAll('.navbar-link').forEach(link => {
+  link.addEventListener('click', (e) => {
+    const parentItem = link.parentElement
 
-  window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 20) {
-      nav.style.padding = '10px 25px';
-      nav.style.background = 'rgba(25,25,25,0.95)';
-    } else {
-      nav.style.padding = '15px 30px';
-      nav.style.background = 'rgba(40,40,40,0.95)';
+    if (parentItem.classList.contains('navbar-dropdown') && window.innerWidth <= 768) {
+      e.preventDefault()
+
+      document.querySelectorAll('.navbar-dropdown').forEach(dropdown => {
+        if (dropdown !== parentItem) {
+          dropdown.classList.remove('active')
+        }
+      })
+
+      parentItem.classList.toggle('active')
+    } else if (!parentItem.classList.contains('navbar-dropdown')) {
+      navbarToggle.classList.remove('active')
+      navbarMenu.classList.remove('active')
     }
-  });
+  })
+})
+
+document.querySelectorAll('.dropdown-link').forEach(link => {
+  link.addEventListener('click', () => {
+    navbarToggle.classList.remove('active')
+    navbarMenu.classList.remove('active')
+    document.querySelectorAll('.navbar-dropdown').forEach(dropdown => {
+      dropdown.classList.remove('active')
+    })
+  })
+})
+
 
 
 // Product Modal
