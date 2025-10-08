@@ -165,15 +165,13 @@
   transition: all 0.3s ease;
   font-family: 'Poppins',sans-serif;
   border-bottom: 1px solid yellow;
-  opacity: 0.5;
 
 }
 
 .dropdown-link:hover {
-  background-color: #2a2a2a;
+  background-color: #515151;
   padding-left: 24px;
   color: yellow;
-  opacity: 1.0;
 }
 
 .navbar-toggle {
@@ -211,12 +209,13 @@
     display: flex;
   }
 
+
   .navbar-menu {
     position: fixed;
     left: -100%;
     top: 70px;
     flex-direction: column;
-    background-color: #000000;
+    background-color: #515151;
     width: 100%;
     text-align: center;
     transition: left 0.3s ease;
