@@ -50,7 +50,7 @@
 }
 
 .navbar-container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
   display: flex;
@@ -612,8 +612,8 @@ p {
 .logo {
     display: flex;
     align-items: center;
-    gap: 15px;
-    font-size: 1.2rem;
+    margin-top: -60px;
+    position: relative;
     font-weight: 700;
     background: white;
     -webkit-background-clip: text;
@@ -621,6 +621,7 @@ p {
     background-clip: text;
     text-decoration: none;
     transition: var(--transition);
+    
 }
 
 .logo:hover {
@@ -650,7 +651,7 @@ p {
 
 .logo span {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 30px;
 }
 
 .nav-menu {
@@ -1296,6 +1297,10 @@ p {
     font-size: 1rem;
 }
 
+.ker{
+    height: 500px;
+    width: 600px;
+}
 /* Form Styles */
 .contact-form {
     background: var(--bg-light);
@@ -1672,7 +1677,7 @@ p {
     }
 
     .ker {
-        width: 300px;
+        width: 280px;
     }
 }
 
@@ -1682,7 +1687,7 @@ p {
     }
 
     .ker {
-        width: 300px;
+        width: 280px;
     }
 
     .hero {
@@ -1712,7 +1717,7 @@ p {
     }
 
     .logo span {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .logo-circle {
